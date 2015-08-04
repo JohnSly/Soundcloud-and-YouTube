@@ -76,25 +76,15 @@ public class ArtistActivity extends ActionBarActivity implements
     private Subscription mTracksSubscription;
     private Subscription mProfileSubscription;
 
-    /**
-     * Start an ArtistActivity for a given artist name.
-     * Start activity pattern.
-     *
-     * @param context    context used to start the activity.
-     * @param artistName name of the artist.
-     */
-    public static void startActivity(Context context, String artistName) {
-        Intent i = new Intent(context, ArtistActivity.class);
-        i.putExtra(BUNDLE_KEY_ARTIST_NAME, artistName);
-        context.startActivity(i);
-    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_artist);
 
-        String artistName = getExtraArtistName();
+        String artistName = "snoopdogg";
+
 
         mCheerleaderClient = new CheerleaderClient.Builder()
                 .from(this)

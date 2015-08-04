@@ -29,6 +29,7 @@ public class SimpleSoundCloudUserView extends LinearLayout {
      * Simple view used to render data of a user.
      *
      * @param context calling context.
+     *
      */
     public SimpleSoundCloudUserView(Context context) {
         super(context);

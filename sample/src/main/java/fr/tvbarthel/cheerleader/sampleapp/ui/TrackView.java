@@ -22,7 +22,7 @@ public class TrackView extends FrameLayout implements View.OnClickListener {
 
     private ImageView mArtwork;
     private TextView mTitle;
-    private TextView mArtist;
+    //private TextView mArtist;
     private TextView mDuration;
 
     private SoundCloudTrack mModel;
@@ -79,11 +79,11 @@ public class TrackView extends FrameLayout implements View.OnClickListener {
         super.setSelected(selected);
         if (selected) {
             mDuration.setTextColor(mDurationColorSelected);
-            mArtist.setTextColor(mArtistColorSelected);
+            //mArtist.setTextColor(mArtistColorSelected);
             mTitle.setTextColor(mTrackColorSelected);
         } else {
             mDuration.setTextColor(mDurationColor);
-            mArtist.setTextColor(mArtistColor);
+            //mArtist.setTextColor(mArtistColor);
             mTitle.setTextColor(mTrackColor);
         }
     }
@@ -101,7 +101,7 @@ public class TrackView extends FrameLayout implements View.OnClickListener {
                 .placeholder(R.color.grey_light)
                 .fit()
                 .into(mArtwork);
-            mArtist.setText(mModel.getArtist());
+            //mArtist.setText(mModel.getArtist());
             mTitle.setText(mModel.getTitle());
             long min = mModel.getDurationInMilli() / 60000;
             long sec = (mModel.getDurationInMilli() % 60000) / 1000;
@@ -123,7 +123,7 @@ public class TrackView extends FrameLayout implements View.OnClickListener {
 
         mArtwork = ((ImageView) findViewById(R.id.track_view_artwork));
         mTitle = ((TextView) findViewById(R.id.track_view_title));
-        mArtist = ((TextView) findViewById(R.id.track_view_artist));
+        //mArtist = ((TextView) findViewById(R.id.track_view_artist));
         mDuration = ((TextView) findViewById(R.id.track_view_duration));
 
         setBackgroundResource(R.drawable.selectable_background_white);

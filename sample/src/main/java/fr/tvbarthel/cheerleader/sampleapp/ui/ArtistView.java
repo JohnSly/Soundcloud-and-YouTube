@@ -19,9 +19,9 @@ import fr.tvbarthel.cheerleader.sampleapp.R;
 public class ArtistView extends FrameLayout {
 
     private ImageView mAvatar;
-    private TextView mArtistName;
+    //private TextView mArtistName;
     private TextView mTracks;
-    private TextView mDescription;
+    //private TextView mDescription;
     private SoundCloudUser mModel;
 
     /**
@@ -72,14 +72,14 @@ public class ArtistView extends FrameLayout {
         mModel = artist;
         if (mModel != null) {
             Picasso.with(getContext()).load(mModel.getAvatarUrl()).into(mAvatar);
-            mArtistName.setText(mModel.getFullName());
+            //mArtistName.setText(mModel.getFullName());
             mTracks.setText(
                 String.format(
                     getResources().getString(R.string.artist_view_track_count),
                     mModel.getTrackCount()
                 )
             );
-            mDescription.setText(Html.fromHtml(mModel.getDescription()));
+           // mDescription.setText(Html.fromHtml(mModel.getDescription()));
             this.setVisibility(VISIBLE);
         }
     }
@@ -93,8 +93,8 @@ public class ArtistView extends FrameLayout {
         LayoutInflater.from(context).inflate(R.layout.artist_view, this);
         this.setVisibility(INVISIBLE);
         mAvatar = ((ImageView) findViewById(R.id.artist_view_avatar));
-        mArtistName = ((TextView) findViewById(R.id.artist_view_name));
+        //mArtistName = ((TextView) findViewById(R.id.artist_view_name));
         mTracks = ((TextView) findViewById(R.id.artist_view_track_number));
-        mDescription = ((TextView) findViewById(R.id.artist_view_description));
+        //mDescription = ((TextView) findViewById(R.id.artist_view_description));
     }
 }

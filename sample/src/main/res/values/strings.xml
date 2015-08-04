@@ -23,8 +23,8 @@
     <string name="artist_view_track_count">%1$d Tracks</string>
 
     <!-- cheerleader banner !-->
-    <string name="cheerleader_banner_title">@string/app_name</string>
-    <string name="cheerleader_banner_subtitle">Support your favorite artist</string>
+    <string name="cheerleader_banner_title">Snoop Dogg</string>
+    <string name="cheerleader_banner_subtitle">Your GGN News Channel</string>
     <string name="activity_pick_project_section">Project</string>
     <string name="activity_pick_project">Cheerleader is an Android open source library based on RxJava and designed to easily support an artist in an Android application thanks to a SoundCloud account.</string>
     <string name="activity_pick_try_it_section">Sample</string>
@@ -34,7 +34,7 @@
     <string name="sound_cloud_credits">Powered by soundcloud</string>
 
     <!-- toast !-->
-    <string name="toast_track_added">Added to the playlist. Touch again to play now.</string>
+    <string name="toast_track_added">Coming Up Next on the PL.</string>
 
     <!-- playback view !-->
     <string name="playback_view_time">%1$02d:%2$02d</string>
